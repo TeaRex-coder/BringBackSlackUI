@@ -23,4 +23,5 @@ This is a blur for me right now but here are some thoughts on what I might do:
 - Custom Slack Desktop app using something like [Nativefier](https://github.com/nativefier/nativefier) or something still being worked on
 - CSS injections like what [BetterDiscord](https://github.com/BetterDiscord/BetterDiscord) for theming the Discord electron client
 
-###
+## Development
+If you need to have a look at the old UI, follow [this helpful guide](https://gist.github.com/Kenny-MWI/6b1a88ad38b5ffef347527a82becf054) from [Kenny-MWI](https://github.com/Kenny-MWI).
