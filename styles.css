@@ -1,0 +1,19 @@
+/* Column BG */
+/* Menu BG Hover */
+/* Active Item */
+/* Active Item Text */
+/* Hover Item */
+/* Text Color */
+/* Active Pressence */
+/* Mention Badge */
+
+:root {
+    --column-bg: #FFFFFF;
+    --menu-bg-hover: #FFFFFF;
+    --active-item: #FFFFFF;
+    --active-item-text: #FFFFFF;
+    --hover-item: #FFFFFF;
+    --text-color: #FFFFFF;
+    --active-presence: #FFFFFF;
+    --mention-badge: #FFFFFF;
+}
