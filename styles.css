@@ -1,19 +1,411 @@
 /* Column BG */
-/* Menu BG Hover */
 /* Active Item */
 /* Active Item Text */
 /* Hover Item */
 /* Text Color */
 /* Active Pressence */
 /* Mention Badge */
+/* Top Nav BG */
+/* Top Nav Text */
 
 :root {
-    --column-bg: #FFFFFF;
-    --menu-bg-hover: #FFFFFF;
-    --active-item: #FFFFFF;
-    --active-item-text: #FFFFFF;
-    --hover-item: #FFFFFF;
-    --text-color: #FFFFFF;
-    --active-presence: #FFFFFF;
-    --mention-badge: #FFFFFF;
+  --column-bg: #2e3440;
+  --active-item: #88c0d0;
+  --active-item-text: #2e3440;
+  --hover-item: #3b4252;
+  --text-color: #d8dee9;
+  --active-presence: #a3be8c;
+  --mention-badge: #81a1c1;
+  --top-nav-bg: #3b4252;
+  --top-nav-text: #d8dee9;
+}
+
+/* Property: Column BG */
+/* Sub-section: Home */
+.p-ia4_client_container
+  .p-ia4_client--with-search-in-top-nav
+  [aria-label="Home"]:has(.active-managed-focus-container) {
+  background-color: var(--column-bg) !important;
+}
+
+.p-channel_sidebar
+  .p-channel_sidebar__list
+  .p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container {
+  background-color: var(--column-bg) !important;
+}
+
+.active-managed-focus-container
+  .p-view_contents
+  .p-ia4_sidebar_header:has(.p-ia4_sidebar_header__title) {
+  background-color: var(--column-bg) !important;
+}
+
+/* Sub-section: DMs */
+.p-ia4_client_container
+  .p-ia4_client--with-search-in-top-nav
+  [aria-label="DMs"]:has(.active-managed-focus-container) {
+  background-color: var(--column-bg) !important;
+}
+
+.active-managed-focus-container
+  .p-view_contents
+  .p-dms_page_header:has(.p-dms_page_header__title) {
+  background-color: var(--column-bg) !important;
+}
+
+.active-managed-focus-container
+  .p-view_contents
+  .p-dms_page_header__search-bar:has(.p-dms_page_header_search_bar) {
+  background-color: var(--column-bg) !important;
+}
+
+[role="presentation"]
+  .c-virtual_list__scroll_container
+  :nth-child(1)
+  .p-activity_ia4_page__item {
+  background-color: var(--column-bg) !important;
+}
+
+[role="presentation"]
+  .c-virtual_list__scroll_container
+  .c-virtual_list__item
+  .p-bottom_padding {
+  background-color: var(--column-bg) !important;
+}
+
+/* Sub-section: Activity */
+.active-managed-focus-container
+  .p-view_contents
+  .p-home_header--no_border:has(.p-dms_page_header__title) {
+  background-color: var(--column-bg) !important;
+}
+
+.p-view_contents
+  .p-view_sidebar
+  .p-activity_ia4_page__tab_container
+  .p-activity_ia4_page__tab_menu {
+  background-color: var(--column-bg) !important;
+}
+
+/* Sub-section: Later */
+.p-view_contents
+  .p-saved_for_later_page
+  .p-saved_for_later_page__tabs
+  .c-tabs__tab_menu {
+  background-color: var(--column-bg) !important;
+}
+
+.active-managed-focus-container
+  .p-view_contents
+  .p-home_header:has(.p-saved_for_later_page__header) {
+  background-color: var(--column-bg) !important;
+}
+
+/* Property: Active Item */
+.p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__channel--selected {
+  background-color: var(--active-item) !important;
+}
+
+.p-tab_rail__tab_menu
+  .c-button-unstyled
+  .c-tabs__tab_content
+  [data-qa="mention_badge"] {
+  background-color: var(--active-item) !important;
+}
+
+/* Property: Active Item Text */
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__channel--selected
+  .p-channel_sidebar__name
+  :first-child {
+  color: var(--active-item-text) !important;
+}
+
+.c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__channel--selected
+  [fill="currentColor"] {
+  color: var(--active-item-text) !important;
+}
+
+/* Property: Hover Item */
+.p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__channel:hover {
+  background-color: var(--hover-item) !important;
+}
+
+/* Property: Text Color */
+/* Sub-section: Home */
+.p-ia4_sidebar_header
+  .p-ia4_sidebar_header__title
+  .c-button-unstyled
+  .p-ia4_home_header_menu__team_name {
+  color: var(--text-color) !important;
+}
+
+.p-ia4_sidebar_header
+  .p-ia4_sidebar_header__title
+  .c-button-unstyled
+  [aria-label="caret-down"] {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__channel
+  :nth-child(2) {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__section_heading_label
+  .p-channel_sidebar__section_heading_button
+  div {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  .c-button-unstyled
+  .p-channel_sidebar__name {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__link--all-threads {
+  color: var(--text-color) !important;
+}
+
+.c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__link--all-threads
+  .p-channel_sidebar__name {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container
+  .p-channel_sidebar__static_list__item
+  .p-channel_sidebar__link--page {
+  color: var(--text-color) !important;
+}
+
+.p-ia4_sidebar_header
+  .p-ia4_sidebar_header__controls
+  .c-button-unstyled
+  [aria-label="refine"] {
+  color: var(--text-color) !important;
+}
+
+.p-ia4_sidebar_header
+  .p-ia4_sidebar_header__controls
+  .p-home_header_controls__composer_button
+  svg {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  [data-sidebar-link-id="add_more_items_dm"]
+  .p-channel_sidebar__name {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  [data-sidebar-link-id="add_more_items_app"]
+  .p-channel_sidebar__name {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list
+  .c-virtual_list__scroll_container
+  #sectionHeading-L02D9FTFU05
+  .p-channel_sidebar__section_heading_expand {
+  color: var(--text-color) !important;
+}
+
+.c-virtual_list__scroll_container
+  .p-channel_sidebar__channel_icon_prefix
+  [fill="currentColor"] {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list .c-virtual_list__scroll_container {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  .p-channel_sidebar__button_container
+  .c-icon {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  [data-sidebar-link-id="add_more_items_dm"]
+  .c-icon {
+  color: var(--text-color) !important;
+}
+
+.p-channel_sidebar__static_list__item
+  .p-channel_sidebar__close_container
+  [data-sidebar-link-id="add_more_items_app"]
+  .c-icon {
+  color: var(--text-color) !important;
+}
+
+/* Property: Active Pressence */
+/* You in sidebar */
+.p-ia__nav__user
+  .p-ia__nav__user__avatar
+  .c-avatar__presence
+  [aria-label="Active"] {
+  color: var(--active-presence) !important;
+}
+
+/* Sub-section: Home */
+/* You in DMs */
+.p-channel_sidebar__close_container
+  .p-channel_sidebar__channel--im-you
+  .c-avatar__presence
+  [fill="currentColor"] {
+  color: var(--active-presence) !important;
+}
+
+/* Others Active */
+.p-channel_sidebar__close_container
+  .p-channel_sidebar__user_avatar
+  [aria-label="Active"] {
+  color: var(--active-presence) !important;
+}
+
+/* Others Away */
+.p-channel_sidebar__close_container .c-avatar__presence [aria-label="Away"] {
+  color: var(--text-color) !important;
+}
+
+/* Others Active Notifications Snoozed */
+.p-channel_sidebar__close_container
+  .c-avatar__presence
+  [aria-label="Active\,\ notifications\ snoozed"] {
+  color: var(--active-presence) !important;
+}
+
+/* Others Away Notifications Snoozed */
+.p-channel_sidebar__close_container
+  .c-avatar__presence
+  [aria-label="Away\,\ notifications\ snoozed"] {
+  color: var(--text-color) !important;
+}
+
+/* Sub-section: DMs */
+/* You */
+.p-activity_ia4_page__item
+  .c-avatar
+  .c-avatar__presence
+  [data-qa-presence-self="true"] {
+  color: var(--active-presence) !important;
+}
+
+/* Others Active */
+.c-avatar
+  .c-avatar__presence
+  [data-qa-presence-self="false"]
+  [d="M14\.5\ 10a4\.5\ 4\.5\ 0\ 1\ 1-9\ 0\ 4\.5\ 4\.5\ 0\ 0\ 1\ 9\ 0Z"] {
+  color: var(--active-presence) !important;
+}
+
+/* Others Away */
+/* Debug this later...*/
+.p-activity_ia4_page__item .c-avatar .c-avatar__presence [fill-rule="evenodd"] {
+  color: var(--text-color) !important;
+}
+
+/* Others Active Notifications Snoozed */
+/* Others Away Notifications Snoozed */
+
+/* Property: Mention Badge */
+/* I'm not sure what this is...*/
+
+/* Property: Top Nav BG */
+.p-ia4_client_container
+  .p-ia4_client--with-search-in-top-nav
+  .active-managed-focus-container
+  .p-ia4_top_nav {
+  background-color: var(--top-nav-bg) !important;
+}
+
+.p-client_container
+  .p-ia4_client_container
+  .p-ia4_client--with-search-in-top-nav
+  [data-qa="tab_rail_desktop"] {
+  background-color: var(--top-nav-bg) !important;
+}
+
+/* Property: Top Nav Text */
+/* Sub-section: Top Navbar */
+[role="none"]
+  .p-top_nav__windows_controls_container
+  .p-top_nav__button
+  [fill="currentColor"] {
+  color: var(--top-nav-text) !important;
+}
+
+.p-top_nav__search__container .c-button-unstyled .p-top_nav__search__icon {
+  color: var(--top-nav-text) !important;
+}
+
+.p-ia4_top_nav__middle_container
+  .p-top_nav__search__container
+  .c-button-unstyled
+  #search-text {
+  color: var(--top-nav-text) !important;
+}
+
+.p-ia4_top_nav__left_container
+  .p-ia4_history_menu_button
+  .p-ia4_history_menu_button__button
+  [fill="currentColor"] {
+  color: var(--top-nav-text) !important;
+}
+
+.p-ia4_top_nav__left_container
+  .p-ia4_history_buttons
+  [aria-label="Forward\ in\ history"]
+  [fill="currentColor"] {
+  color: var(--top-nav-text) !important;
+}
+
+.p-ia4_top_nav__left_container
+  .p-ia4_history_buttons
+  [aria-label="Back\ in\ history"]
+  [fill="currentColor"] {
+  color: var(--top-nav-text) !important;
+}
+
+/* Sub-section: Side Navbar */
+.active-managed-focus-container
+  .c-button-unstyled
+  .p-control_strip__create_button__icon
+  svg {
+  color: var(--top-nav-text) !important;
+}
+
+.p-tab_rail__tab_container .p-tab_rail__tab_menu .c-tabs__tab_content {
+  color: var(--top-nav-text) !important;
+}
+
+.p-tab_rail__tab_menu
+  .c-button-unstyled
+  .c-tabs__tab_content
+  [data-qa="mention_badge"] {
+  color: var(--top-nav-text) !important;
 }
