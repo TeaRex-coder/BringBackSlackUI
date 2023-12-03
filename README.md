@@ -20,21 +20,31 @@ This project is currently a work-in-progress, please check back soon for updates
 
 ### Current
 
-I am working through writing the CSS to colour the individual elements.
+~~Working through writing the CSS to colour the individual elements.~~
+
+Building Chrome Extension to theme Slack from CSS Properties
 
 ### Future Plans
 
 This is a blur for me right now but here are some thoughts on what I might do:
 
-- Browser extension for Slack web
-- Custom Slack Desktop app using something like [Nativefier](https://github.com/nativefier/nativefier) or something still being worked on
-- CSS injections like what [BetterDiscord](https://github.com/BetterDiscord/BetterDiscord) for theming the Discord electron client
+- Browser extension for Slack web. Make this cross-platform and build a UI to set theme
+- Desktop app with something like [Nativefier](https://github.com/nativefier/nativefier) or something still being worked on. Or, CSS injections like what [BetterDiscord](https://github.com/BetterDiscord/BetterDiscord) does for theming the Discord electron client
 
 ## Development
 
 ### Environment Setup
 
 If you need to have a look at the old UI, follow [this helpful guide](https://gist.github.com/Kenny-MWI/6b1a88ad38b5ffef347527a82becf054) from [Kenny-MWI](https://github.com/Kenny-MWI).
+
+#### Extension
+
+```bash
+pnpm install
+pnpm run build
+```
+
+Then load upacked from the dist directory into `chrome://extensions/`
 
 ### Understanding Theme Properties
 

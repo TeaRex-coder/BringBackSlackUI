@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "BringBackSlackUI",
+  "version": "1.0",
+  "description": "null...",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.slack.com/*"],
+      "css": ["/src/theme.css"]
+    }
+  ],
+  "host_permissions": ["https://*.slack.com/*"]
+}
